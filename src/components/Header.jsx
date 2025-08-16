@@ -12,6 +12,7 @@ function Header() {
                 
             </ul>
         </nav>
+        <a href="" download className="resume-btn">Download My CV</a>
     </header>
   )
 }
