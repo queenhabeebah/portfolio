@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header>
-        <h1>Habeebah Aleilo</h1>
+        <h1>&#123;HA&#125;</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -11,8 +11,8 @@ function Header() {
                 <li><a href="#contact">Contact</a></li>
                 
             </ul>
-        </nav>
         <a href="" download className="resume-btn">Download My CV</a>
+        </nav>
     </header>
   )
 }
