@@ -1,70 +1,202 @@
 /* General Setting */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+h3 {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+h4 {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p{
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-section{
-    padding: 4rem 1rem;
-    max-width: 1000px;
-    margin: auto;
+section {
+  padding: 4rem;
+  margin: auto;
 }
 
 /* Header */
-header{
-    background-color: #333;
-    color: #f4f4f4;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    position: fixed;
-    top: 0;
-   width: 100%;
-    height: auto;
+header {
+  background-color: #222222d9;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5rem;
+}
+header h1{
+  flex: 1;
 }
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 2;
 }
-header nav ul{
-    display: flex;
-    list-style: none;
-    gap: 15px;
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin-right: 1rem;
 }
-header nav a{
-    font-weight: bold;
+header nav a {
+  font-weight: bold;
 }
-.resume-btn{
-    font-weight: bold;
-    background-color:#f4f4f4 ;
-    color: #333;
-    padding: 10px;
-    margin: 15px;
-    border-radius: 10px;
-    border:none;
-    height: 50px;
-    width: 150px;
+.resume-btn, .hero a {
+  display: inline-block;
+  font-weight: bold;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  width: 11rem;
+  text-align: center;
 }
-    
-/* Hero */
-.hero{
-    margin-top: 100px;
-    text-align: center;
-    background-color: #f4f4f4;
 
+/* Hero */
+.hero {
+  margin-top: 5rem;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 6rem 1rem;
+}
+.hero h2 {
+  font-size: 2.5rem;
+}
+.hero a {
+  margin-top: 2rem;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+.skill-item {
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.2s ease;
+}
+.skill-item:hover {
+  transform: scale(1.15);
+}
+
+/* Projects */
+.project-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  margin-top: 1rem;
+
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.project-box:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.project-box img {
+  width: 25rem;
+}
+
+.project-box h4 {
+  margin-bottom: 0.5rem;
+}
+.project-box a {
+  display: inline-block;
+  font-weight: bold;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  margin: 1rem 1rem 0 0;
+  border-radius: 5px;
+  width: 10rem;
+  text-align: center;
+}
+.project-box .demo {
+  display: inline-block;
+  font-weight: bold;
+  background-color: #222;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+}
+
+/* Contact */
+.contact-info li {
+  margin-bottom: 0.5rem;
+  list-style: circle;
+  list-style-position: inside;
+}
+.contact-info li span {
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+footer div {
+  display: flex;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  header{
+    flex-direction: column;
+    height: 7rem;
+  }
+  header nav .resume-btn{
+    display: none;
+  }
+  .hero{
+    margin-top: 7rem;
+  }
+  .project-box, .project-box:nth-child(2){
+    flex-direction: column;
+  }
+  .project-box img{
+    width: 15rem;
+  }
+footer{
+  flex-direction: column;
+}
 }
