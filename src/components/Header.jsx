@@ -11,7 +11,7 @@ function Header() {
                 <li><a href="#contact">Contact</a></li>
                 
             </ul>
-        <a href="" download className="resume-btn">Download My CV</a>
+        <a href="my-resume.pdf" download className="resume-btn">Download My CV</a>
         </nav>
     </header>
   )
