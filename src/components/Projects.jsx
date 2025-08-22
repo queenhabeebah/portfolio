@@ -1,4 +1,5 @@
 import projects from "../data/projectsData";
+// const features = (projects.features)
 
 function Projects() {
   return (
@@ -11,6 +12,16 @@ function Projects() {
             <div>
               <h4>{project.title}</h4>
               <p>{project.description}</p>
+              <ul>
+                {project.features.map((feature, i) => (
+                  <li key={i}>{feature}</li>
+                ))}
+              </ul>
+              <div>
+                {project.stack.map((tech, ind) => (
+                  <button key={ind}>{tech}</button>
+                ))}
+              </div>
               <a
                 href={project.demo}
                 target="_blank"
