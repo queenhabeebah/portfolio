@@ -128,11 +128,17 @@ header nav a {
   flex-direction: row-reverse;
 }
 .project-box img {
-  width: 25rem;
+  max-width: 25rem;
 }
 
 .project-box h4 {
   margin-bottom: 0.5rem;
+}
+
+.project-box li{
+  list-style: none;
+  font-style: oblique;
+  
 }
 .project-box a {
   display: inline-block;
@@ -179,7 +185,8 @@ footer div {
   gap: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
+/* Responsiveness */
+@media only screen and (max-width: 800px) {
   header{
     flex-direction: column;
     height: 7rem;
@@ -194,7 +201,7 @@ footer div {
     flex-direction: column;
   }
   .project-box img{
-    width: 15rem;
+    width: 18rem;
   }
 footer{
   flex-direction: column;
