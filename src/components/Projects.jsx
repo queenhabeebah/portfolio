@@ -23,6 +23,14 @@ function Projects() {
                 ))}
               </div>
               <a
+                href={project.code}
+                title={`Source code for ${project.title}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source Code
+              </a>
+              <a
                 href={project.demo}
                 title={`Click to see ${project.title} live demo`}
                 target="_blank"
@@ -30,14 +38,6 @@ function Projects() {
                 className="demo"
               >
                 Live Demo{" "}
-              </a>
-              <a
-                href={project.code}
-                title={`Source code for ${project.title}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Source Code
               </a>
             </div>
           </div>
