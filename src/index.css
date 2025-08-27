@@ -130,6 +130,7 @@ header nav a {
 }
 .project-box img {
   max-width: 25rem;
+  width: auto;
 }
 
 .project-box h4 {
@@ -194,6 +195,7 @@ footer {
 footer div {
   display: flex;
   gap: 1rem;
+  text-align: center;
 }
 
 /* Responsiveness */
