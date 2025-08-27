@@ -129,8 +129,8 @@ header nav a {
   flex-direction: row-reverse;
 }
 .project-box img {
-  max-width: 25rem;
-  width: auto;
+  max-width: 100%;
+  height: aut0;
 }
 
 .project-box h4 {
@@ -195,6 +195,8 @@ footer {
 footer div {
   display: flex;
   gap: 1rem;
+}
+footer p{
   text-align: center;
 }
 
