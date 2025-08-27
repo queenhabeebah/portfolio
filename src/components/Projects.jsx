@@ -19,7 +19,7 @@ function Projects() {
               </ul>
               <div>
                 {project.stack.map((tech, ind) => (
-                  <button key={ind}>{tech}</button>
+                  <button className="tech-stack" key={ind}>{tech}</button>
                 ))}
               </div>
               <a

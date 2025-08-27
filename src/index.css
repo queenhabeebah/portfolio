@@ -69,9 +69,10 @@ header nav a {
   font-weight: bold;
   background-color: #007bff;
   color: #fff;
-  padding: 0.7rem 1.2rem;
+  padding: 0.7rem;
   border-radius: 5px;
   width: 11rem;
+  height: 3rem;
   text-align: center;
 }
 
@@ -136,9 +137,19 @@ header nav a {
 }
 
 .project-box li{
-  list-style: none;
-  font-style: oblique;
-  
+  list-style: square;
+  margin-left: 2rem;
+  font-style: oblique;  
+}
+.tech-stack{
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  width: 5rem;
+  background-color: #333;
+  color: #fff;
 }
 .project-box a {
   display: inline-block;
@@ -155,7 +166,7 @@ header nav a {
   display: inline-block;
   font-weight: bold;
   background-color: #222;
-  color: #fff;
+  color: #007bff;
   padding: 0.7rem 1.2rem;
   border-radius: 5px;
 }
