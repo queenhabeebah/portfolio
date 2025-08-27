@@ -129,7 +129,7 @@ header nav a {
   flex-direction: row-reverse;
 }
 .project-box img {
-  max-width: 100%;
+  max-width: 50%;
   height: aut0;
 }
 
@@ -215,9 +215,9 @@ footer p{
   .project-box, .project-box:nth-child(2){
     flex-direction: column;
   }
-  .project-box img{
-    width: 18rem;
-  }
+.project-box img {
+  max-width: 80%;
+}
 footer{
   flex-direction: column;
 }
