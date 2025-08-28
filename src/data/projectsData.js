@@ -39,6 +39,7 @@ export default [
       "Authorization for secure content management",
     ],
     stack: ["React", "Node.js", "Express", "MongoDB", "Tailwind", "CSS"],
+    image: "blog-app-mockup.png" ,
     demo: "https://blog-app-virid-one.vercel.app/",
     code: "https://github.com/queenhabeebah/Blog-App",
   },

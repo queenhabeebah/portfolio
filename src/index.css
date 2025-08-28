@@ -129,8 +129,8 @@ header nav a {
   flex-direction: row-reverse;
 }
 .project-box img {
-  max-width: 50%;
-  height: aut0;
+  max-width: 40%;
+  height: auto;
 }
 
 .project-box h4 {
